@@ -351,47 +351,13 @@
     let downloadInterval = null;
 
     function handleDownload() {
-      // Open progress dialog
-      downloadModal.classList.remove('opacity-0', 'pointer-events-none');
-      downloadModalCard.classList.remove('scale-95');
-      downloadModalCard.classList.add('scale-100');
-
-      // Reset state
-      let progress = 0;
-      downloadProgress.style.width = '0%';
-      downloadPercent.textContent = '0%';
-      downloadStatusText.textContent = 'Connecting to safe server...';
-      modalTitle.textContent = 'Downloading BOLO567...';
-      modalIcon.innerHTML = '<i class="fa-solid fa-arrow-down animate-bounce text-rose-500"></i>';
-
-      if (downloadInterval) clearInterval(downloadInterval);
-
-      downloadInterval = setInterval(() => {
-        progress += Math.floor(Math.random() * 12) + 8;
-        if (progress > 100) progress = 100;
-        
-        downloadProgress.style.width = progress + '%';
-        downloadPercent.textContent = progress + '%';
-
-        if (progress > 30 && progress < 75) {
-          downloadStatusText.textContent = 'Verifying signature & security...';
-        } else if (progress >= 75 && progress < 100) {
-          downloadStatusText.textContent = 'Finalizing package (18.6 MB)...';
-        } else if (progress >= 100) {
-          clearInterval(downloadInterval);
-          downloadStatusText.textContent = 'Download Complete!';
-          modalTitle.textContent = 'Ready to Install!';
-          modalIcon.innerHTML = '<i class="fa-solid fa-check text-green-500"></i>';
-
-          // Trigger simulated direct download file creation
-          triggerApkBlobDownload();
-        }
-      }, 250);
+      // Start the real file download immediately; do not simulate progress.
+      triggerApkBlobDownload();
     }
 
     function triggerApkBlobDownload() {
       const a = document.createElement('a');
-      a.href = 'https://raw.githubusercontent.com/digitalkaushal123-ship-it/bolo567/main/bolo567.apk';
+      a.href = '/bolo567.apk';
       a.download = 'BOLO567_v4.2.0.apk';
       a.rel = 'noopener';
       document.body.appendChild(a);
