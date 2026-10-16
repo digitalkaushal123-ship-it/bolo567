@@ -16,7 +16,7 @@
   <style>
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #0b0c10;
+      background-color: #faf9ff;
       overflow-x: hidden;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
@@ -28,25 +28,25 @@
 
     /* Glows & Neon Dropshadows */
     .neon-red-glow {
-      box-shadow: 0 0 50px -10px rgba(239, 35, 60, 0.45), 0 0 80px -20px rgba(220, 20, 60, 0.25);
+      box-shadow: 0 0 50px -10px rgba(124, 58, 237, 0.18), 0 0 80px -20px rgba(139, 92, 246, 0.12);
     }
     
     .badge-outer-glow {
-      box-shadow: 0 0 35px 8px rgba(255, 30, 60, 0.35), inset 0 0 25px 4px rgba(255, 30, 60, 0.2);
+      box-shadow: 0 0 35px 8px rgba(124, 58, 237, 0.16), inset 0 0 25px 4px rgba(124, 58, 237, 0.08);
     }
 
     .btn-glow {
-      box-shadow: 0 10px 35px -5px rgba(225, 29, 72, 0.75), 0 0 20px 2px rgba(239, 68, 68, 0.4);
+      box-shadow: 0 10px 35px -5px rgba(124, 58, 237, 0.24), 0 0 20px 2px rgba(139, 92, 246, 0.14);
       transition: all 0.25s ease-in-out;
     }
 
     .btn-glow:active {
       transform: scale(0.97);
-      box-shadow: 0 5px 20px -2px rgba(225, 29, 72, 0.9);
+      box-shadow: 0 5px 20px -2px rgba(124, 58, 237, 0.3);
     }
 
     .pill-glow {
-      box-shadow: 0 0 15px 1px rgba(239, 35, 60, 0.3);
+      box-shadow: 0 0 15px 1px rgba(124, 58, 237, 0.12);
     }
 
     /* Pulse radar effect */
@@ -88,8 +88,8 @@
     .bg-cyber-grid {
       background-size: 32px 32px;
       background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        linear-gradient(to right, rgba(109, 40, 217, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(109, 40, 217, 0.06) 1px, transparent 1px);
     }
   </style>
   <!-- Meta Pixel Code -->
@@ -110,11 +110,11 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 </head>
-<body class="min-h-screen bg-[#08090d] text-white flex items-center justify-center p-4 relative bg-cyber-grid selection:bg-red-500 selection:text-white">
+<body class="min-h-screen bg-[#faf9ff] text-slate-900 flex items-center justify-center p-4 relative bg-cyber-grid selection:bg-violet-500 selection:text-white">
 
   <!-- Ambient background glow points -->
-  <div class="fixed top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-red-600/15 rounded-full blur-[120px] pointer-events-none"></div>
-  <div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-80 h-64 bg-red-800/10 rounded-full blur-[90px] pointer-events-none"></div>
+  <div class="fixed top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-violet-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+  <div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-80 h-64 bg-purple-500/10 rounded-full blur-[90px] pointer-events-none"></div>
 
   <!-- Main Centered Mobile App Card Container -->
   <div class="w-full max-w-[430px] mx-auto flex flex-col items-center relative z-10 px-4 py-8">
@@ -122,36 +122,36 @@
     <!-- Top Logo Shield / Disc -->
     <div class="relative mb-6">
       <!-- Outer Pulsing Ring -->
-      <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-red-600/40 via-red-500/20 to-red-700/50 blur-md animate-pulse-subtle"></div>
+      <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-violet-500/20 via-purple-400/10 to-violet-600/20 blur-md animate-pulse-subtle"></div>
       
       <!-- Main Badge Container -->
-      <div class="relative w-48 h-48 sm:w-52 sm:h-52 rounded-full p-[3px] bg-gradient-to-b from-red-500 via-red-700 to-rose-950 badge-outer-glow flex items-center justify-center">
+      <div class="relative w-48 h-48 sm:w-52 sm:h-52 rounded-full p-[3px] bg-gradient-to-b from-violet-500 via-purple-600 to-violet-800 badge-outer-glow flex items-center justify-center">
         <!-- Inner Disc Body -->
-        <div class="w-full h-full rounded-full bg-[#120a0f] border border-red-500/40 flex flex-col items-center justify-center relative overflow-hidden shadow-inner">
+        <div class="w-full h-full rounded-full bg-white border border-violet-200 flex flex-col items-center justify-center relative overflow-hidden shadow-inner">
           
           <!-- Subtle Radial Arc Overlays -->
-          <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(255,20,60,0.22),transparent_70%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(139,92,246,0.12),transparent_70%)]"></div>
           <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 16px 16px;"></div>
           
           <!-- Crest / Crown Icon Emblem -->
           <div class="relative z-10 flex flex-col items-center -mt-2">
             <!-- Modern Crown & Wings Vector Crest -->
-            <svg class="w-16 h-14 text-rose-500 filter drop-shadow-[0_0_8px_rgba(244,63,94,0.7)]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-16 h-14 text-violet-600 filter drop-shadow-[0_0_8px_rgba(244,63,94,0.7)]" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <!-- Central Trident / Scepter / Crown Shape -->
-              <path d="M32 6L35 24H29L32 6Z" fill="#ff4d6d" />
+              <path d="M32 6L35 24H29L32 6Z" fill="#8b5cf6" />
               <path d="M32 20L44 14L40 28L32 24L24 28L20 14L32 20Z" fill="url(#crest-grad)" />
               <circle cx="32" cy="12" r="3" fill="#ffe4e6" />
-              <circle cx="20" cy="14" r="2.5" fill="#fda4af" />
-              <circle cx="44" cy="14" r="2.5" fill="#fda4af" />
+              <circle cx="20" cy="14" r="2.5" fill="#a78bfa" />
+              <circle cx="44" cy="14" r="2.5" fill="#a78bfa" />
               <!-- Shield Crescent Wings -->
-              <path d="M12 28C14 42 22 48 32 50C42 48 50 42 52 28C46 36 38 39 32 39C26 39 18 36 12 28Z" fill="#e11d48" opacity="0.9"/>
+              <path d="M12 28C14 42 22 48 32 50C42 48 50 42 52 28C46 36 38 39 32 39C26 39 18 36 12 28Z" fill="#7c3aed" opacity="0.9"/>
               <path d="M22 34H42M25 38H39" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
               <!-- Base pedestal -->
-              <path d="M28 50H36L34 54H30L28 50Z" fill="#f43f5e"/>
+              <path d="M28 50H36L34 54H30L28 50Z" fill="#8b5cf6"/>
               <defs>
                 <linearGradient id="crest-grad" x1="20" y1="14" x2="44" y2="28" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#ff758f"/>
-                  <stop offset="1" stop-color="#be123c"/>
+                  <stop stop-color="#c4b5fd"/>
+                  <stop offset="1" stop-color="#6d28d9"/>
                 </linearGradient>
               </defs>
             </svg>
@@ -159,7 +159,7 @@
 
           <!-- Red Angled Ribbon Banner with BOLO567 -->
           <div class="relative z-10 w-full mt-1">
-            <div class="bg-gradient-to-r from-red-950 via-rose-700 to-red-950 border-y border-rose-400/50 py-1.5 px-4 text-center shadow-lg transform">
+            <div class="bg-gradient-to-r from-violet-700 via-purple-600 to-violet-700 border-y border-violet-300/70 py-1.5 px-4 text-center shadow-lg transform">
               <span class="font-brand font-black italic tracking-widest text-lg sm:text-xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 BOLO567
               </span>
@@ -167,7 +167,7 @@
           </div>
 
           <!-- Subtitle Ribbon -->
-          <div class="relative z-10 mt-1 tracking-[0.25em] text-[8px] sm:text-[9px] uppercase font-bold text-rose-300/80">
+          <div class="relative z-10 mt-1 tracking-[0.25em] text-[8px] sm:text-[9px] uppercase font-bold text-violet-600">
             ORIGINAL APP
           </div>
 
@@ -178,52 +178,52 @@
     </div>
 
     <!-- LIVE NOW Capsule Pill -->
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1b0a11]/90 border border-rose-500/50 pill-glow mb-4">
-      <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-live-dot inline-block shadow-[0_0_8px_#ef4444]"></span>
-      <span class="text-xs uppercase font-extrabold tracking-widest text-rose-200">LIVE NOW</span>
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-violet-200 pill-glow mb-4">
+      <span class="w-2.5 h-2.5 rounded-full bg-violet-500 animate-live-dot inline-block shadow-[0_0_8px_#8b5cf6]"></span>
+      <span class="text-xs uppercase font-extrabold tracking-widest text-violet-700">LIVE NOW</span>
     </div>
 
     <!-- Main Title BOLO567 -->
-    <h1 class="font-brand font-black text-4xl sm:text-5xl uppercase tracking-wider text-white text-center mb-1 drop-shadow-md">
+    <h1 class="font-brand font-black text-4xl sm:text-5xl uppercase tracking-wider text-slate-900 text-center mb-1">
       BOLO567
     </h1>
 
     <!-- Member Count -->
-    <div class="text-gray-300 font-semibold text-base sm:text-lg mb-6 flex items-center justify-center gap-1.5">
-      <span class="text-white font-bold" id="memberCount">70,311+</span>
-      <span class="text-gray-400 font-normal">active members</span>
+    <div class="text-slate-700 font-semibold text-base sm:text-lg mb-6 flex items-center justify-center gap-1.5">
+      <span class="text-slate-900 font-bold" id="memberCount">70,311+</span>
+      <span class="text-slate-500 font-normal">active members</span>
     </div>
 
     <!-- Features Badges (100% Free & Instant Access) -->
     <div class="flex items-center justify-center gap-6 text-sm font-semibold mb-6">
-      <div class="flex items-center gap-2 text-gray-200">
-        <i class="fa-solid fa-check text-rose-500 text-sm"></i>
+      <div class="flex items-center gap-2 text-slate-700">
+        <i class="fa-solid fa-check text-violet-600 text-sm"></i>
         <span>100% Free</span>
       </div>
-      <div class="flex items-center gap-2 text-gray-200">
-        <i class="fa-solid fa-bolt text-rose-500 text-sm"></i>
+      <div class="flex items-center gap-2 text-slate-700">
+        <i class="fa-solid fa-bolt text-violet-600 text-sm"></i>
         <span>Instant Access</span>
       </div>
     </div>
 
     <!-- Offer Ends Countdown Box -->
-    <div class="w-full bg-[#130d14]/90 border border-white/10 rounded-2xl py-3.5 px-6 mb-6 flex items-center justify-center gap-2.5 shadow-inner">
-      <span class="text-gray-400 font-bold tracking-wider text-xs sm:text-sm uppercase">OFFER ENDS IN:</span>
-      <div class="font-brand font-black text-rose-500 text-xl tracking-wider flex items-center" id="countdownTimer">
+    <div class="w-full bg-white border border-violet-100 rounded-2xl py-3.5 px-6 mb-6 flex items-center justify-center gap-2.5 shadow-inner">
+      <span class="text-slate-500 font-bold tracking-wider text-xs sm:text-sm uppercase">OFFER ENDS IN:</span>
+      <div class="font-brand font-black text-violet-600 text-xl tracking-wider flex items-center" id="countdownTimer">
         <span id="minutes">14</span>:<span id="seconds">44</span>
       </div>
     </div>
 
     <!-- Red High-Glow CTA Download APK Button -->
-    <button id="downloadBtn" onclick="handleDownload()" class="w-full py-4 sm:py-4.5 px-6 rounded-3xl bg-gradient-to-r from-red-600 via-rose-600 to-red-600 text-white font-brand font-black text-lg sm:text-xl tracking-wide flex items-center justify-center gap-3.5 btn-glow active:scale-95 transition cursor-pointer border-t border-rose-400/40">
+    <button id="downloadBtn" onclick="handleDownload()" class="w-full py-4 sm:py-4.5 px-6 rounded-3xl bg-gradient-to-r from-violet-700 via-purple-600 to-violet-700 text-white font-brand font-black text-lg sm:text-xl tracking-wide flex items-center justify-center gap-3.5 btn-glow active:scale-95 transition cursor-pointer border-t border-violet-300/70">
       <i class="fa-brands fa-android text-2xl filter drop-shadow"></i>
       <span>DOWNLOAD APK</span>
     </button>
 
     <!-- Meta / Verification Footnotes -->
-    <div class="flex items-center justify-center flex-wrap gap-x-3 gap-y-1 text-xs text-gray-400 mt-4.5">
-      <span class="inline-flex items-center gap-1.5 text-rose-400/90 font-medium">
-        <i class="fa-solid fa-shield-halved text-rose-500"></i>
+    <div class="flex items-center justify-center flex-wrap gap-x-3 gap-y-1 text-xs text-slate-500 mt-4.5">
+      <span class="inline-flex items-center gap-1.5 text-violet-700 font-medium">
+        <i class="fa-solid fa-shield-halved text-violet-600"></i>
         Verified Safe
       </span>
       <span class="text-gray-600">•</span>
@@ -233,11 +233,11 @@
     </div>
 
     <!-- Quick instructions / Support link -->
-    <div class="mt-8 pt-6 border-t border-white/5 w-full flex items-center justify-between text-[11px] text-gray-500">
+    <div class="mt-8 pt-6 border-t border-violet-100 w-full flex items-center justify-between text-[11px] text-slate-500">
       <span class="flex items-center gap-1.5">
-        <i class="fa-solid fa-mobile-screen text-gray-400"></i> Android 6.0+ Supported
+        <i class="fa-solid fa-mobile-screen text-slate-500"></i> Android 6.0+ Supported
       </span>
-      <button onclick="toggleHelpModal(true)" class="hover:text-rose-400 transition underline underline-offset-2 flex items-center gap-1 cursor-pointer">
+      <button onclick="toggleHelpModal(true)" class="hover:text-violet-700 transition underline underline-offset-2 flex items-center gap-1 cursor-pointer">
         <i class="fa-solid fa-circle-question"></i> How to Install?
       </button>
     </div>
@@ -245,82 +245,82 @@
   </div>
 
   <!-- Download Toast / Progress Notification Modal -->
-  <div id="downloadModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-    <div class="bg-[#151118] border border-rose-500/40 rounded-3xl p-6 w-full max-w-sm text-center shadow-2xl relative transform scale-95 transition-transform duration-300" id="downloadModalCard">
-      <button onclick="closeDownloadModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg">
+  <div id="downloadModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white border border-violet-200 rounded-3xl p-6 w-full max-w-sm text-center shadow-2xl relative transform scale-95 transition-transform duration-300" id="downloadModalCard">
+      <button onclick="closeDownloadModal()" class="absolute top-4 right-4 text-slate-500 hover:text-violet-700 text-lg">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <div class="w-16 h-16 rounded-full bg-rose-500/20 text-rose-500 flex items-center justify-center mx-auto mb-4 text-2xl border border-rose-500/40" id="modalIcon">
+      <div class="w-16 h-16 rounded-full bg-violet-100 text-violet-600 flex items-center justify-center mx-auto mb-4 text-2xl border border-violet-200" id="modalIcon">
         <i class="fa-solid fa-arrow-down animate-bounce"></i>
       </div>
 
-      <h3 class="text-lg font-bold text-white mb-1" id="modalTitle">Starting Download...</h3>
-      <p class="text-xs text-gray-400 mb-4" id="modalDesc">BOLO567_v4.2.0_official.apk is downloading directly to your device.</p>
+      <h3 class="text-lg font-bold text-slate-900 mb-1" id="modalTitle">Starting Download...</h3>
+      <p class="text-xs text-slate-500 mb-4" id="modalDesc">BOLO567_v4.2.0_official.apk is downloading directly to your device.</p>
 
       <!-- Progress bar -->
-      <div class="w-full bg-gray-800 rounded-full h-2 mb-3 overflow-hidden">
-        <div id="downloadProgress" class="bg-gradient-to-r from-red-600 to-rose-400 h-2 rounded-full w-0 transition-all duration-300"></div>
+      <div class="w-full bg-violet-100 rounded-full h-2 mb-3 overflow-hidden">
+        <div id="downloadProgress" class="bg-gradient-to-r from-violet-700 to-purple-400 h-2 rounded-full w-0 transition-all duration-300"></div>
       </div>
-      <div class="text-[11px] text-gray-400 flex justify-between px-1 mb-4">
+      <div class="text-[11px] text-slate-500 flex justify-between px-1 mb-4">
         <span id="downloadStatusText">Connecting...</span>
         <span id="downloadPercent">0%</span>
       </div>
 
-      <div class="bg-black/40 rounded-xl p-3 text-left border border-white/5 text-[11px] text-gray-300 space-y-1 mb-4">
-        <p class="font-semibold text-rose-400 flex items-center gap-1.5">
+      <div class="bg-violet-50 rounded-xl p-3 text-left border border-violet-100 text-[11px] text-slate-600 space-y-1 mb-4">
+        <p class="font-semibold text-violet-700 flex items-center gap-1.5">
           <i class="fa-solid fa-circle-info"></i> If prompt appears:
         </p>
         <p>Tap <strong>"Download Anyway"</strong> or allow installation from this source.</p>
       </div>
 
-      <button onclick="closeDownloadModal()" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition">
+      <button onclick="closeDownloadModal()" class="w-full py-2.5 rounded-xl bg-violet-100 hover:bg-violet-200 text-violet-900 text-xs font-semibold transition">
         Done
       </button>
     </div>
   </div>
 
   <!-- Help / Installation Guide Modal -->
-  <div id="helpModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-    <div class="bg-[#140e15] border border-rose-500/30 rounded-3xl p-6 w-full max-w-sm text-center shadow-2xl relative">
-      <button onclick="toggleHelpModal(false)" class="absolute top-4 right-4 text-gray-400 hover:text-white text-lg">
+  <div id="helpModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white border border-violet-200 rounded-3xl p-6 w-full max-w-sm text-center shadow-2xl relative">
+      <button onclick="toggleHelpModal(false)" class="absolute top-4 right-4 text-slate-500 hover:text-violet-700 text-lg">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <div class="w-12 h-12 rounded-2xl bg-rose-600/20 text-rose-400 flex items-center justify-center mx-auto mb-3 text-xl border border-rose-500/30">
+      <div class="w-12 h-12 rounded-2xl bg-rose-600/20 text-violet-700 flex items-center justify-center mx-auto mb-3 text-xl border border-violet-200">
         <i class="fa-solid fa-gear"></i>
       </div>
 
-      <h3 class="text-base font-bold text-white mb-1">How to Install BOLO567 APK</h3>
-      <p class="text-xs text-gray-400 mb-4">3 Simple steps to get started</p>
+      <h3 class="text-base font-bold text-slate-900 mb-1">How to Install BOLO567 APK</h3>
+      <p class="text-xs text-slate-500 mb-4">3 Simple steps to get started</p>
 
-      <div class="text-left space-y-3 text-xs text-gray-300 mb-5">
-        <div class="flex items-start gap-3 bg-white/5 p-2.5 rounded-xl border border-white/5">
-          <div class="w-5 h-5 rounded-full bg-rose-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">1</div>
+      <div class="text-left space-y-3 text-xs text-slate-600 mb-5">
+        <div class="flex items-start gap-3 bg-violet-50 p-2.5 rounded-xl border border-violet-100">
+          <div class="w-5 h-5 rounded-full bg-violet-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">1</div>
           <div>
-            <strong class="text-white block">Download APK</strong>
+            <strong class="text-slate-900 block">Download APK</strong>
             Click on "Download APK" button and save file.
           </div>
         </div>
 
-        <div class="flex items-start gap-3 bg-white/5 p-2.5 rounded-xl border border-white/5">
-          <div class="w-5 h-5 rounded-full bg-rose-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">2</div>
+        <div class="flex items-start gap-3 bg-violet-50 p-2.5 rounded-xl border border-violet-100">
+          <div class="w-5 h-5 rounded-full bg-violet-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">2</div>
           <div>
-            <strong class="text-white block">Allow Unknown Sources</strong>
+            <strong class="text-slate-900 block">Allow Unknown Sources</strong>
             Go to Settings &gt; Security &gt; Enable "Install Unknown Apps".
           </div>
         </div>
 
-        <div class="flex items-start gap-3 bg-white/5 p-2.5 rounded-xl border border-white/5">
-          <div class="w-5 h-5 rounded-full bg-rose-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">3</div>
+        <div class="flex items-start gap-3 bg-violet-50 p-2.5 rounded-xl border border-violet-100">
+          <div class="w-5 h-5 rounded-full bg-violet-600 text-white flex items-center justify-center text-[10px] font-bold shrink-0 mt-0.5">3</div>
           <div>
-            <strong class="text-white block">Open &amp; Enjoy</strong>
+            <strong class="text-slate-900 block">Open &amp; Enjoy</strong>
             Tap the downloaded APK in notification bar to install and launch.
           </div>
         </div>
       </div>
 
-      <button onclick="toggleHelpModal(false)" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 text-white text-xs font-bold transition">
+      <button onclick="toggleHelpModal(false)" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-violet-700 to-purple-600 text-white text-xs font-bold transition">
         Understood
       </button>
     </div>
