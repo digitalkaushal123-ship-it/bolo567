@@ -390,20 +390,13 @@
     }
 
     function triggerApkBlobDownload() {
-      try {
-        const dummyApkContent = "BOLO567_OFFICIAL_APPLICATION_PACKAGE_SECURE";
-        const blob = new Blob([dummyApkContent], { type: 'application/vnd.android.package-archive' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'BOLO567_v4.2.0.apk';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-      } catch (e) {
-        console.log("Download simulated successfully.");
-      }
+      const a = document.createElement('a');
+      a.href = 'https://raw.githubusercontent.com/digitalkaushal123-ship-it/bolo567/main/bolo567.apk';
+      a.download = 'BOLO567_v4.2.0.apk';
+      a.rel = 'noopener';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
     }
 
     function closeDownloadModal() {
