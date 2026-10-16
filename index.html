@@ -368,11 +368,25 @@
     let downloadInterval = null;
 
     function handleDownload() {
-      // Track the download-button click before starting the file download.
+      // Fire the Meta Pixel custom event when the download button is clicked.
+      // Start the APK download after Pixel acknowledges the event, with a fallback
+      // so the download still starts if Pixel is blocked or does not respond.
+      let downloadStarted = false;
+      const startDownloadOnce = () => {
+        if (downloadStarted) return;
+        downloadStarted = true;
+        triggerApkBlobDownload();
+      };
+
       if (typeof window.fbq === 'function') {
-        window.fbq('trackCustom', 'Download');
+        window.fbq('trackCustom', 'Download', {}, {
+          eventCallback: startDownloadOnce,
+          eventTimeout: 800
+        });
+        window.setTimeout(startDownloadOnce, 1000);
+      } else {
+        startDownloadOnce();
       }
-      triggerApkBlobDownload();
     }
 
     function triggerApkBlobDownload() {
